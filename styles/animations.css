@@ -1,0 +1,15 @@
+@keyframes rotating-tire {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes delivery-guy-driving {
+    from {
+        right: -15vw;
+    } to {
+        right: 115vw;
+    }
+}

@@ -1,0 +1,6 @@
+
+@media (width <= 1050px) {
+    #order-image-container {
+        display: none;
+    }
+}

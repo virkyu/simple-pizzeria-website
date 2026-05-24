@@ -1,0 +1,76 @@
+nav {
+    position: sticky;
+    top: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.1rem;
+
+    padding: 20px 17%;
+    margin: 0 auto;
+    color: rgb(39, 39, 39);
+    border-bottom: 1px solid rgba(128, 84, 84, 0.301);
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.856);
+
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.205);
+
+    z-index: 999;
+}
+
+nav a {
+    all: unset;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2.5rem;
+    list-style-type: none;
+}
+
+.nav-button {
+    padding: 10px 27px;
+    background: red;
+    border-radius: 5rem;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.nav-button > img {
+    transition: 150ms all;
+    margin-right: 12px;
+}
+
+.nav-button:hover > img {
+    margin-right: 7px;
+}
+
+nav > ul > li {
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+nav li:hover {
+    color: red;
+}
+
+nav li:last-child:hover {
+    color: white;
+    background: rgb(214, 0, 0);
+}

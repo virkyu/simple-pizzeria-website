@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/sites/index-phone.css">
+    <link rel="stylesheet" href="styles/sites/index.css">
+
+    <link rel="stylesheet" href="styles/layout/header.css">
+    <link rel="stylesheet" href="styles/layout/nav.css">
+    <link rel="stylesheet" href="styles/layout/footer.css">
+    
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/all.css">
+
+    <!-- LIBRARY -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+    <title>Pizzeria</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+        <img src="assets/logo/main.png" width="90px" alt="Logo pizzeri" />
+
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li class="nav-button"><img src="assets/icons/shoppingCart.svg" width="20px" /><a>Złóż zamówienie</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="order"> 
+            <div id="order-content" data-aos="zoom-in-up">
+                <h1>Bella Crosta </h1>
+                <h2>
+                    <span style="color: gold">★</span>
+                    <span style="color: #2b2b2b">4.67</span>
+                    <span style="color: #3a3a3a; font-size: 80%; font-weight: 300;">Oceny klientów</span>
+                </h2>
+
+                <p>Zamów swoją ulubioną pizzę i ciesz się świeżym smakiem prosto z pieca – szybko, wygodnie i bez wychodzenia z domu</p>
+
+                <a href="#" id="order-button">ZŁÓŻ ZAMÓWIENIE</a>
+            </div>
+
+            
+            <div id="order-image-container" data-aos="zoom-in-up">
+
+                <button onclick="changeImage(false)">&lt;</button>
+
+                <img src="assets/gallery/1.jpg" id="orderImage" width="600px" alt="Zdjęcie pizzeri">
+
+                <button onclick="changeImage(true)">&gt;</button>
+
+            </div>
+        </section>
+
+        <section id="positives">
+            <div id="positives-card-container">
+                <div class="positives-card">
+                    <img class="positives-icon" width="60px" src="assets/icons/leaf.svg"/>
+                    <h2>Smacznie!</h2>
+                    <p class="positives-desc">Codziennie wybieramy świeże warzywa, aromatyczne zioła i wysokiej jakości sery przez to pizza smakuje wyjątkowo.  </p>
+                </div>
+                <div class="positives-card">
+                    <img class="positives-icon" width="60px" src="assets/icons/flame.svg"/>
+                    <h2>Sprawnie!</h2>
+                    <p class="positives-desc">Tradycyjny piec nadaje pizzy chrupiące ciasto, idealnie wypieczone brzegi i niepowtarzalny aromat.</p>
+                </div>
+                <div class="positives-card">
+                    <img class="positives-icon" width="60px" src="assets/icons/clock.svg"/>
+                    <h2>Szybko!</h2>
+                    <p class="positives-desc">Dostarczamy gorącą pizzę prosto pod drzwi — szybko, sprawnie i zawsze na czas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="order-hint">
+            <h1 id="order-hint-title">Zamów już teraz i ciesz się smakiem!</h1>
+
+            <button id="order-hint-button">Złóż zamówienie</button>
+        </section>
+
+        <section id="the-fastest-delivery">
+            <h3 class="subtitle">NIE MARNUJ CZASU!</h3>
+            <h1>Najszybsza dostawa w mieście!</h1>
+
+            <p>Nie trać czasu na gotowanie i długie oczekiwanie na dostawe<br/>zamów naszą pyszną pizzę i ciesz się smakiem bez zbędnego długiego oczekiwania!</p>
+
+            <div id="delivery-guy-container">
+                <div id="delivery-guy">
+                    <img src="assets/gallery/tire.png" id="first-tire" class="tire" alt="Koło">
+                    <img src="assets/gallery/tire.png" id="second-tire" class="tire" alt="Koło">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS CODE -->
+     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
