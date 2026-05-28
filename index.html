@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="styles/sites/index-phone.css">
     <link rel="stylesheet" href="styles/sites/index.css">
+    <link rel="stylesheet" href="styles/sites/index-phone.css">
 
+    <link rel="stylesheet" href="styles/layout/scrollbar.css">
     <link rel="stylesheet" href="styles/layout/header.css">
     <link rel="stylesheet" href="styles/layout/nav.css">
     <link rel="stylesheet" href="styles/layout/footer.css">
-    
+
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/all.css">
 
@@ -34,9 +35,11 @@
 
         <ul>
             <li><a href="#">Menu</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#contact">Kontakt</a></li>
             <li class="nav-button"><img src="assets/icons/shoppingCart.svg" width="20px" /><a>Złóż zamówienie</a></li>
         </ul>
+
+        <img src="assets/icons/menu.svg" id="phone-menu-button" alt="Menu" width="40px">
     </nav>
 
     <main>
@@ -58,8 +61,11 @@
             <div id="order-image-container" data-aos="zoom-in-up">
 
                 <button onclick="changeImage(false)">&lt;</button>
-
-                <img src="assets/gallery/1.jpg" id="orderImage" width="600px" alt="Zdjęcie pizzeri">
+                <div id="order-image-gallery-container">
+                    <div id="order-image-gallery-opacity"></div>
+                    <img src="assets/gallery/1.jpg" id="orderImage" width="600px" alt="Zdjęcie pizzeri">
+                </div>
+                
 
                 <button onclick="changeImage(true)">&gt;</button>
 
@@ -105,11 +111,125 @@
                 </div>
             </div>
         </section>
+
+        <section id="our-team">
+            <div id="our-team-image-container">
+                <img id="our-team-image" src="assets/gallery/szef-kuchni.png" alt="Nasz kucharz">
+
+                <div id="our-team-image-desc">
+                    <img src="assets/icons/fire.svg" id="our-team-image-icon" width="40px" alt="Kucharz!">
+                    Szef Kogut
+                </div>
+            </div>
+            <div id="our-team-desc">
+                <h3 class="subtitle">Poznaj nas</h3>
+                <h1>Nasi kucharze</h1>
+
+                <p>Tworzymy zespół doświadczonych kucharzy. Każde zamówienie przygotowujemy<br/>z dbałością o smak i świeżość, a cały proces przebiega sprawnie, od wyboru pizzy aż po dostawę pod Twoje drzwi.</p>
+                <ul id="our-team-ul">
+                    <li>
+                        <div class="our-team-ul-dot"></div>
+                        Świeże składniki i sprawdzone receptury
+                    </li>
+                    <li>
+                        <div class="our-team-ul-dot"></div>
+                        Proste zamawianie i szybka realizacja
+                    </li>
+                    <li>
+                        <div class="our-team-ul-dot"></div>
+                        Dostawa dostępna przez cały tydzień
+                    </li>
+                </ul>
+
+                <button id="our-team-button">Zamów teraz!</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3 class="subtitle">Zamawiaj</h3>
+            <h1>SKONTAKTUJ SIĘ Z NAMI</h1>
+
+            <div id="contact-data-container">
+                <div class="contact-data-card">
+                    <h1>8-22</h1>
+                    <h3>W lokalu</h3>
+
+                    <p>Do Twojej dyspozycji</p>
+                </div>
+                <div class="contact-data-card-middle">
+                    <h1>TELEFONICZNIE</h1>
+                    <h3>+48 213 767 420</h3>
+
+                    <p>Nie bój się i dryndaj</p>
+                </div>
+                <div class="contact-data-card">
+                    <h1>Mailowo</h1>
+                    <h3>kontakt@crosta.com</h3>
+
+                    <p>Zamów nawet mailowo!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="signature-dish">
+            <h3 class="subtitle">TO CO NAJLEPSZE!</h3>
+            <h1>SPRÓBUJ NASZEGO POPISOWEGO DANIA</h1>
+
+            <iframe id="signature-dish-video" height="600px" width="70%" src="https://www.youtube.com/embed/1RKZeyDktl0?si=SmxcEpWMq3TDDmb-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section id="menu">
+
+            <div id="menu-opacity"></div>
+
+            <div id="menu-content-container">
+                <h3 class="subtitle">NIE ZWLEKAJ!</h3>
+                <h1>ZOBACZ MENU</h1>
+
+                <p>Na co czekasz, to jedzenie tak dobre jak te Twojej mamy!</p>
+                <div id="menu-content-button-container">
+                    <a href="#contact" id="menu-button">MENU</a>
+                    <a href="#contact" id="contact-button">KONTAKT</a>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-section">
+            <h2>Nie czekaj!</h2>
+
+            <div id="footer-section-button-container">
+                <a href="#contact" id="footer-section-button-contact">KONTAKT</a>
+                <a href="https://facebook.com/jakistam" id="footer-section-button-facebook">
+                    <img src="assets/icons/facebook.svg" alt="facebook" width="30px" height="30px">
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="subtitle">PRZYDATNE LINKI</h3>
+            <div class="footer-links">
+                <a href="#contact">KONTAKT</a>
+                <a href="/menu">MENU</a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="subtitle">NASZE SOCIAL MEDIA</h3>
+            <div class="footer-links">
+                <a href="YOUTUBE">YOUTUBE</a>
+                <a href="FACEBOOK">FACEBOOK</a>
+                <a href="INSTAGRAM">INSTAGRAM</a>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- JS CODE -->
      
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/nav.js"></script>
     <script>
         AOS.init();
     </script>
