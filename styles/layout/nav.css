@@ -24,6 +24,10 @@ nav {
     z-index: 100;
 }
 
+nav > img {
+    cursor: pointer;
+}
+
 nav a {
     all: unset;
 }
