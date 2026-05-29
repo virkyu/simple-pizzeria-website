@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/sites/menu.css">
+
+    <link rel="stylesheet" href="styles/layout/scrollbar.css">
+    <link rel="stylesheet" href="styles/layout/header.css">
+    <link rel="stylesheet" href="styles/layout/nav.css">
+    <link rel="stylesheet" href="styles/layout/footer.css">
+
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/all.css">
+
+    <!-- LIBRARY -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Menu</title>
+</head>
+<body>
+    <nav>
+        <img src="assets/logo/main.png" width="90px" alt="Logo pizzeri" />
+
+        <ul>
+            <li><a href="/menu.html">Menu</a></li>
+            <li><a href="/#contact">Kontakt</a></li>
+            <li class="nav-button"><img src="assets/icons/shoppingCart.svg" width="20px" /><a href="/#contact">Złóż zamówienie</a></li>
+        </ul>
+
+        <img src="assets/icons/menu.svg" id="phone-menu-button" alt="Menu" width="40px">
+    </nav>
+
+    <main>
+        <section id="menu">
+            <h3 class="subtitle">Sprawdź smaki</h3>
+            <h1 class="title">Nasze menu</h1>
+            <p class="menu-desc">
+                Wybierz coś dla siebie — klasyczne pizze, ostre kompozycje i lekkie propozycje prosto z pieca.
+            </p>
+
+            <section id="menu-card-container">
+                <section class="menu-card">
+                    <div class="menu-card-top">
+                        <h2>Margherita</h2>
+                        <span>29 zł</span>
+                    </div>
+                    <p>Sos pomidorowy, mozzarella, świeża bazylia i oliwa.</p>
+                    <button>Zamów</button>
+                </section>
+
+                <section class="menu-card menu-card-special">
+                    <div class="menu-card-top">
+                        <h2>Kurczak w czekoladzie</h2>
+                        <span>36 zł</span>
+                    </div>
+                    <p>2 Kostki czosnku, banan, pomidor, woda, czekolada</p>
+                    <button>Zamów</button>
+                </section>
+
+                <section class="menu-card">
+                    <div class="menu-card-top">
+                        <h2>Capricciosa</h2>
+                        <span>34 zł</span>
+                    </div>
+                    <p>Szynka, pieczarki, mozzarella, karczochy i sos pomidorowy.</p>
+                    <button>Zamów</button>
+                </section>
+
+                <section class="menu-card">
+                    <div class="menu-card-top">
+                        <h2>Quattro Formaggi</h2>
+                        <span>38 zł</span>
+                    </div>
+                    <p>Mozzarella, gorgonzola, parmezan, ricotta i oliwa.</p>
+                    <button>Zamów</button>
+                </section>
+
+                <section class="menu-card">
+                    <div class="menu-card-top">
+                        <h2>Prosciutto</h2>
+                        <span>39 zł</span>
+                    </div>
+                    <p>Szynka dojrzewająca, rukola, parmezan i pomidorki.</p>
+                    <button>Zamów</button>
+                </section>
+
+                <section class="menu-card">
+                    <div class="menu-card-top">
+                        <h2>Vegetariana</h2>
+                        <span>33 zł</span>
+                    </div>
+                    <p>Papryka, oliwki, cebula, pieczarki, mozzarella i oregano.</p>
+                    <button>Zamów</button>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h2>Nie czekaj!</h2>
+
+            <div id="footer-section-button-container">
+                <a href="#contact" id="footer-section-button-contact">KONTAKT</a>
+                <a href="https://facebook.com/jakistam" id="footer-section-button-facebook">
+                    <img src="assets/icons/facebook.svg" alt="facebook" width="30px" height="30px">
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="subtitle">PRZYDATNE LINKI</h3>
+            <div class="footer-links">
+                <a href="#contact">KONTAKT</a>
+                <a href="/menu">MENU</a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="subtitle">NASZE SOCIAL MEDIA</h3>
+            <div class="footer-links">
+                <a href="YOUTUBE">YOUTUBE</a>
+                <a href="FACEBOOK">FACEBOOK</a>
+                <a href="INSTAGRAM">INSTAGRAM</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

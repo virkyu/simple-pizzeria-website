@@ -27,16 +27,13 @@
     <title>Pizzeria</title>
 </head>
 <body>
-    <header>
-
-    </header>
     <nav>
         <img src="assets/logo/main.png" width="90px" alt="Logo pizzeri" />
 
         <ul>
-            <li><a href="#">Menu</a></li>
+            <li><a href="/menu.html">Menu</a></li>
             <li><a href="#contact">Kontakt</a></li>
-            <li class="nav-button"><img src="assets/icons/shoppingCart.svg" width="20px" /><a>Złóż zamówienie</a></li>
+            <li class="nav-button"><img src="assets/icons/shoppingCart.svg" width="20px" /><a href="#contact">Złóż zamówienie</a></li>
         </ul>
 
         <img src="assets/icons/menu.svg" id="phone-menu-button" alt="Menu" width="40px">
@@ -54,7 +51,7 @@
 
                 <p>Zamów swoją ulubioną pizzę i ciesz się świeżym smakiem prosto z pieca – szybko, wygodnie i bez wychodzenia z domu</p>
 
-                <a href="#" id="order-button">ZŁÓŻ ZAMÓWIENIE</a>
+                <a href="#contact" id="order-button">ZŁÓŻ ZAMÓWIENIE</a>
             </div>
 
             
@@ -74,17 +71,17 @@
 
         <section id="positives">
             <div id="positives-card-container">
-                <div class="positives-card">
+                <div class="positives-card" data-aos="zoom-in-up">
                     <img class="positives-icon" width="60px" src="assets/icons/leaf.svg"/>
                     <h2>Smacznie!</h2>
                     <p class="positives-desc">Codziennie wybieramy świeże warzywa, aromatyczne zioła i wysokiej jakości sery przez to pizza smakuje wyjątkowo.  </p>
                 </div>
-                <div class="positives-card">
+                <div class="positives-card" data-aos="zoom-in-up">
                     <img class="positives-icon" width="60px" src="assets/icons/flame.svg"/>
                     <h2>Sprawnie!</h2>
                     <p class="positives-desc">Tradycyjny piec nadaje pizzy chrupiące ciasto, idealnie wypieczone brzegi i niepowtarzalny aromat.</p>
                 </div>
-                <div class="positives-card">
+                <div class="positives-card" data-aos="zoom-in-up">
                     <img class="positives-icon" width="60px" src="assets/icons/clock.svg"/>
                     <h2>Szybko!</h2>
                     <p class="positives-desc">Dostarczamy gorącą pizzę prosto pod drzwi — szybko, sprawnie i zawsze na czas.</p>
@@ -95,7 +92,7 @@
         <section id="order-hint">
             <h1 id="order-hint-title">Zamów już teraz i ciesz się smakiem!</h1>
 
-            <button id="order-hint-button">Złóż zamówienie</button>
+            <button id="order-hint-button" onclick="location.href='#contact'">Złóż zamówienie</button>
         </section>
 
         <section id="the-fastest-delivery">
@@ -113,7 +110,7 @@
         </section>
 
         <section id="our-team">
-            <div id="our-team-image-container">
+            <div id="our-team-image-container" data-aos="zoom-in-up">
                 <img id="our-team-image" src="assets/gallery/szef-kuchni.png" alt="Nasz kucharz">
 
                 <div id="our-team-image-desc">
@@ -121,7 +118,7 @@
                     Szef Kogut
                 </div>
             </div>
-            <div id="our-team-desc">
+            <div id="our-team-desc" data-aos="zoom-in-up">
                 <h3 class="subtitle">Poznaj nas</h3>
                 <h1>Nasi kucharze</h1>
 
@@ -150,19 +147,19 @@
             <h1>SKONTAKTUJ SIĘ Z NAMI</h1>
 
             <div id="contact-data-container">
-                <div class="contact-data-card">
+                <div class="contact-data-card" data-aos="zoom-in-up">
                     <h1>8-22</h1>
                     <h3>W lokalu</h3>
 
                     <p>Do Twojej dyspozycji</p>
                 </div>
-                <div class="contact-data-card-middle">
+                <div class="contact-data-card-middle" data-aos="zoom-in-up">
                     <h1>TELEFONICZNIE</h1>
                     <h3>+48 213 767 420</h3>
 
                     <p>Nie bój się i dryndaj</p>
                 </div>
-                <div class="contact-data-card">
+                <div class="contact-data-card" data-aos="zoom-in-up">
                     <h1>Mailowo</h1>
                     <h3>kontakt@crosta.com</h3>
 
@@ -179,16 +176,15 @@
         </section>
 
         <section id="menu">
-
             <div id="menu-opacity"></div>
 
-            <div id="menu-content-container">
+            <div id="menu-content-container" >
                 <h3 class="subtitle">NIE ZWLEKAJ!</h3>
                 <h1>ZOBACZ MENU</h1>
 
                 <p>Na co czekasz, to jedzenie tak dobre jak te Twojej mamy!</p>
                 <div id="menu-content-button-container">
-                    <a href="#contact" id="menu-button">MENU</a>
+                    <a href="/menu.html" id="menu-button">MENU</a>
                     <a href="#contact" id="contact-button">KONTAKT</a>
                 </div>
             </div>

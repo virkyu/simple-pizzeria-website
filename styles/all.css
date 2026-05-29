@@ -8,3 +8,12 @@
 *::selection {
     background-color: red;
 }
+
+.subtitle {
+    color: #f00;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-bottom: -0.5rem;
+    text-transform: uppercase;
+}

@@ -5,6 +5,7 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     padding: 4rem 10%;
+    box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.103);
 }
 
 .footer-section {
